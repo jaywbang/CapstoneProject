@@ -1,32 +1,19 @@
-<!DOCTYPE = html>
-<html lang = "en">
+<html>
   <head>
-      <meta charset = "utf-8">
-      <title>St. Martin's University</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>Saint Martin's University</title>
   </head>
   <body>
-      <div class = "container mt-5">
-        <form action = "createpdf.php" method = "POST">
-          <img src = "logo.jpeg" alt = "saints" width = "25%" height = "90"></br></br>
-          <div class = "row mb-2">
-              <div class = "col-md-3">
-                <input type = "text" name = "fullname" placeholder = "Name" class = "form-control" required>
-              </div>
-              <div class = "col-md-3">
-                <input type = "text" name = "studentid" placeholder = "Student ID" class = "form-control" required>
-              </div>
-          </div>
-          <div class = "row mb-2">
-                <div class = "col-md-3">
-                <input type = "text" name = "major" placeholder = "Major" class = "form-control" required>
-                </div>
-                <div class = "col-md-3">
-                <input type = "text" name = "grade" placeholder = "Grade" class = "form-control" required>
-                </div>
-          </div>
-          <button type = "submit" class = "btn btn-success btn-small btn-block">PDF</button>
-        </form>
-      </div>
+    <form action = "chooseclass.php">
+        Full Name: <input type = "text"></input>
+        Student ID: <input type = "text"></input>
+        Major: <select name = "major" id = "major">
+        <option value = "Computer Science" id = "CSC" name = "Computer Science">Computer Science</option>
+        <option value = "English" id = "ENG" name = "English">English</option>
+        <option value = "Math" id = "MTH" name = "Math">Math</option>
+        <option value = "Engineer" id = "ENGR" name = "Engineer">Engineer</option>
+      </select>
+    </br>
+    <input type = "Submit" name = "Submit" value = "Submit">
+    </form> 
   </body>
 </html>
